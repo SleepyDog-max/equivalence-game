@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equivalence in Translation Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .task {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .idiom {
+            background-color: #ffebcc;
+        }
+        .joke {
+            background-color: #ccffcc;
+        }
+        .slogan {
+            background-color: #ffcccc;
+        }
+        .brand {
+            background-color: #d9ccff;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+            margin-top: 10px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #d13700;
+        }
+    </style>
+    <script>
+        function showSummary() {
+            document.querySelector('.container').innerHTML = `
+                <h2 style="color: #ff4500;">Translation Summary & Insights</h2>
+                <p>Below are explanations and examples to help you understand the complexities of translation equivalence.</p>
+                
+                <div class="task idiom">
+                    <h3>1. Idiom</h3>
+                    <p><strong>English:</strong> "Spill the beans"</p>
+                    <p><strong>Explanation:</strong> This idiom means to reveal a secret. A literal translation may not work well, so an equivalent idiom is often preferred.</p>
+                    <p><strong>Example Functional Translation:</strong> In Spanish, "irse de la lengua" ("go off with the tongue") conveys the same meaning.</p>
+                </div>
+                
+                <div class="task joke">
+                    <h3>2. Joke/Pun</h3>
+                    <p><strong>English:</strong> "Why did the scarecrow win an award? Because he was outstanding in his field!"</p>
+                    <p><strong>Explanation:</strong> This joke relies on a pun: "outstanding" means both "excellent" and "literally standing in a field." A direct translation may lose the humor.</p>
+                    <p><strong>Example Functional Translation:</strong> In French, one might adapt it to a wordplay with "épouvantail" (scarecrow) and "effrayant" (scary).</p>
+                </div>
+                
+                <div class="task slogan">
+                    <h3>3. Political Slogan</h3>
+                    <p><strong>English:</strong> "Make America Great Again"</p>
+                    <p><strong>Explanation:</strong> This phrase is emotionally charged and culturally specific. A literal translation may not carry the same impact.</p>
+                    <p><strong>Example Functional Translation:</strong> In Chinese, "让祖国再度辉煌" ("Let the motherland shine again") is one possible adaptation.</p>
+                </div>
+                
+                <div class="task brand">
+                    <h3>4. Brand Slogan</h3>
+                    <p><strong>English:</strong> "Just Do It" (Nike)</p>
+                    <p><strong>Explanation:</strong> This slogan is short and powerful, implying motivation and action. Many global brands adapt their slogans to fit different cultures.</p>
+                    <p><strong>Example Functional Translation:</strong> In Chinese, Nike uses "想做就去做" ("If you want to do it, just do it").</p>
+                </div>
+                
+                <button onclick="location.reload()">Restart Challenge</button>
+            `;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: #007bff;">Equivalence in Translation Challenge</h2>
+        <p>Translate the following culturally loaded texts into another language. Try both a literal translation and a functional (pragmatic/culturally adapted) translation.</p>
+        
+        <div class="task idiom">
+            <h3>1. Idiom</h3>
+            <p><strong>English:</strong> "Spill the beans"</p>
+            <textarea placeholder="Literal Translation"></textarea>
+            <textarea placeholder="Functional Translation"></textarea>
+        </div>
+        
+        <div class="task joke">
+            <h3>2. Joke/Pun</h3>
+            <p><strong>English:</strong> "Why did the scarecrow win an award? Because he was outstanding in his field!"</p>
+            <textarea placeholder="Literal Translation"></textarea>
+            <textarea placeholder="Functional Translation"></textarea>
+        </div>
+        
+        <div class="task slogan">
+            <h3>3. Political Slogan</h3>
+            <p><strong>English:</strong> "Make America Great Again"</p>
+            <textarea placeholder="Literal Translation"></textarea>
+            <textarea placeholder="Functional Translation"></textarea>
+        </div>
+        
+        <div class="task brand">
+            <h3>4. Brand Slogan</h3>
+            <p><strong>English:</strong> "Just Do It" (Nike)</p>
+            <textarea placeholder="Literal Translation"></textarea>
+            <textarea placeholder="Functional Translation"></textarea>
+        </div>
+        
+        <button onclick="showSummary()">Submit Translations</button>
+    </div>
+</body>
+</html>
